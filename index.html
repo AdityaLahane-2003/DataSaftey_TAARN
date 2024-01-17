@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Saftey Check</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="sendEmail()">Send Email To Check Data Saftey</button>
+
+<script>
+    function sendEmail() {
+        // Replace 'your-email@example.com' with the desired email address
+        var emailAddress = 'foundationtaran@gmail.com';
+        
+        // Open default email client with a pre-filled subject
+        window.location.href = 'mailto:' + emailAddress + '?subject=Check%20Data%20Saftey%20';
+    }
+</script>
+
+</body>
+</html>
